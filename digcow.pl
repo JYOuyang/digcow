@@ -5,7 +5,7 @@ use warnings;
 
 my $output;
 
-$output = `dig +short $ARGV[1] $ARGV[2]`;
+$output = "dig +short $ARGV[0] $ARGV[1]";
 
 if ($output) {
 	print `cowsay $output`;
